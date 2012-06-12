@@ -4,7 +4,18 @@
 
 ### Installation
 
-    $ make
+    $ make install
+
+You will need to have `$GOPATH` set. Ideally it should start with a 'development' path, and end with the
+default go path.
+
+    export GOPATH=/usr/local/go/site-packages/go1:/usr/local/go
+
+You will also need to setup your development "site-packages" dir
+
+    mkdir -p /usr/local/go/site-packages/go1/src
+    mkdir -p /usr/local/go/site-packages/go1/pkg
+    mkdir -p /usr/local/go/site-packages/go1/bin
 
 ### Why
 
